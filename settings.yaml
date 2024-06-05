@@ -1,0 +1,27 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  config: charset=utf8mb4&parseTime=True&loc=Local
+  db: game_system
+  user: root
+  password: 123456
+  log_level: debug
+logger:
+  level: info
+  prefix: '[gms]'
+  director: log
+  show_line: true
+  log_in_console: true
+system:
+  host: 127.0.0.1
+  env: release
+  port: 80
+jwt:
+  secret: game_manager_system
+  expires: 20
+  issuer: cjl
+redis:
+  ip: 127.0.0.1
+  port: 6379
+  password: 123456
+  pool_size: 100
